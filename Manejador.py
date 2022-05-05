@@ -49,4 +49,5 @@ class ManejadorViajero:
                 mayor = viajero
         return mayor
     
-    
+    #opcion2
+
