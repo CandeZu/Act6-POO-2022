@@ -48,6 +48,5 @@ class ManejadorViajero:
             if(viajero > mayor):
                 mayor = viajero
         return mayor
-    
-    #opcion2
+
 
