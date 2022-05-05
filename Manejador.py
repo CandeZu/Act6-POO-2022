@@ -41,5 +41,12 @@ class ManejadorViajero:
             print(ViajeroEncontrado)
             return ViajeroEncontrado
     
-    def opcion1(self):
-        
+    #opcion1
+    def MayorCantidad(self):
+        mayor = self.__listaViajeros[0]
+        for viajero in self.__listaViajeros:
+            if(viajero > mayor):
+                mayor = viajero
+        return mayor
+    
+    

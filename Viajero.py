@@ -29,4 +29,13 @@ class Viajero:
 
     def cantidadMillas(self):
         return self.__millasAcum
-        
+    
+    def __gt__(self, otro):
+        if(type(self) == type(otro)):
+            return (self.__millasAcum > otro.__millasAcum)
+    
+    def __add__(self, millas):
+        return Viajero(self.__numViajero,self.__dni,self.__nombre,self.__apellido,self.__millasAcum + millas)
+    
+    def __sub__(self, millas):
+        return Viajero(self.__numViajero,self.__dni,self.__nombre,self.__apellido,self.__millasAcum - millas)
